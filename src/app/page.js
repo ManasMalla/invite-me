@@ -16,87 +16,16 @@ Number.prototype.pad = function (size) {
   }
   return s;
 };
-export default function Home() {
-  const weddingInstance = new Wedding({
-    bride: {
-      contact: { instagram: "@priya_insta" },
-      image:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-      name: "Priya Sharma",
-      occupation: "Software Developer",
-      parents: {
-        father: {
-          name: "Rajesh Sharma",
-          occupation: "Businessman",
-          visible: true,
-        },
-        mother: {
-          name: "Anita Sharma",
-          occupation: "Homemaker",
-          visible: true,
-        },
-      },
-      short_name: "Sindhu",
-    },
-    contactInformation: {
-      organizer: {
-        email: "info@elegantevents.in",
-        name: "Elegant Events Management",
-        phone: "+91 98765 43210",
-      },
-    },
-    groom: {
-      contact: { instagram: "@amit_insta" },
-      image:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-      name: "Amit Patel",
-      occupation: "Civil Engineer",
-      parents: {
-        father: {
-          name: "Vijay Patel",
-          occupation: "Retired Government Officer",
-          visible: true,
-        },
-        mother: {
-          name: "Meera Patel",
-          occupation: "School Principal",
-          visible: true,
-        },
-      },
-      short_name: "Chaitanya",
-    },
-    importantLinks: [
-      { title: "Wedding Website", url: "https://www.priyaamitwedding.in" },
-      { title: "RSVP Online", url: "https://www.priyaamitwedding.in/rsvp" },
-    ],
-    invitationDetails: {
-      date: "2024-08-20",
-      eventTimings: {
-        mehendi: "14:30",
-        reception: "22:00",
-        sangeet: "19:00",
-        weddingCeremony: "20:30",
-      },
-      time: "18:00",
-      venue: {
-        address: "456 Celebration Lane",
-        city: "Mumbai",
-        name: "Royal Palace Banquet Hall",
-        state: "Maharashtra",
-        zip: "400001",
-      },
-    },
-    mapAndDirections: {
-      directions:
-        "Detailed directions are provided on the official wedding website.",
-      map: "https://maps.google.com/royalpalacebanquethall",
-    },
-    transportation: {
-      details:
-        "Complimentary shuttle services available. Please follow signs for parking.",
-      shuttleService: true,
-    },
-  });
+
+export default async function Home() {
+  const res = await fetch(
+    "https://movie-info-9700e-default-rtdb.asia-southeast1.firebasedatabase.app/abcde.json"
+  );
+  const repo = await res.json();
+  console.log("------");
+  const weddingInstance = new Wedding(repo);
+  console.log(weddingInstance);
+  console.log("------");
   var pattern = /(\d{2})\.(\d{2})\.(\d{4})/;
 
   const date = new Date(

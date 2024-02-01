@@ -51,6 +51,9 @@ export default async function Home() {
           </h3>
           <button
             className={`${robotoMono.className} p-2 text-xs mt-3 text-white mx-auto rounded-md bg-black`}
+            onClick={() => {
+              console.log("clicked");
+            }}
           >
             navigate me
           </button>
@@ -61,6 +64,9 @@ export default async function Home() {
           </h3>
           <button
             className={`${robotoMono.className} p-2 text-xs mt-3 text-white mx-auto rounded-md bg-black`}
+            onClick={() => {
+              window.open("/house-warming", "_self");
+            }}
           >
             navigate me
           </button>

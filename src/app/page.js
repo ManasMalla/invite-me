@@ -1,10 +1,9 @@
 "use client";
-import Image from "next/image";
 import { Caveat } from "next/font/google";
 import { Roboto_Mono } from "next/font/google";
 import Family from "@/components/family";
 import EventCard from "@/components/event";
-import { useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { Wedding } from "@/models/wedding";
 
 const caveat = Caveat({ subsets: ["latin"] });
@@ -18,8 +17,12 @@ Number.prototype.pad = function (size) {
 };
 
 export default async function Home() {
+  const searchParams = useSearchParams();
+
+  const search = searchParams.get("id");
+  console.log(search);
   const res = await fetch(
-    "https://movie-info-9700e-default-rtdb.asia-southeast1.firebasedatabase.app/abcde.json"
+    `https://invite-me-ba9d3-default-rtdb.firebaseio.com/${search}.json`
   );
   const repo = await res.json();
   console.log("------");

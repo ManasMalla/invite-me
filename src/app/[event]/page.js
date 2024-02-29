@@ -59,10 +59,10 @@ export default async function Home({ params }) {
         </h1>
         <div className="w-full h-[1px] my-2 bg-black"></div>
         <p className={`${robotoMono.className} font-extralight tracking-[7px]`}>
-          {date.getDate()}.{date.getUTCMonth().pad()}.{date.getFullYear()}
+          {date.getDate()}.03.{date.getFullYear()}
         </p>
       </div>
-      <div className="relative w-full my-5">
+      <div className="relative w-full my-5 text-center">
         <div className="colorful-gradient-background px-20 pt-3 pb-6 flex flex-col">
           <h3 className={`${caveat.className} text-2xl`}>
             {weddingInstance.invitationDetails.venue.name}
@@ -96,7 +96,7 @@ export default async function Home({ params }) {
         <div className="w-full flex items-center gap-x-4">
           <img
             src="/rangoli.png"
-            className="w-40 h-80 object-right object-cover"
+            className="w-40 h-80 object-right object-cover rangoli"
           />
           <div className={`${robotoMono.className}`}>
             <h2 className={`${caveat.className} text-4xl`}>
@@ -105,9 +105,12 @@ export default async function Home({ params }) {
             <h3 className="font-extralight">
               {weddingInstance.bride.occupation}
             </h3>
-            <p className="text-xs mt-[6px]">
+            <a
+              className="text-xs mt-[6px]"
+              href={`https://instagram.com/${weddingInstance.bride.contact.instagram}`}
+            >
               {weddingInstance.bride.contact.instagram}
-            </p>
+            </a>
           </div>
         </div>
         <div className="w-full flex items-center gap-x-4">
@@ -118,13 +121,16 @@ export default async function Home({ params }) {
             <h3 className="font-extralight">
               {weddingInstance.groom.occupation}
             </h3>
-            <p className="text-xs mt-[6px]">
+            <a
+              className="text-xs mt-[6px]"
+              href={`https://instagram.com/${weddingInstance.groom.contact.instagram}`}
+            >
               {weddingInstance.groom.contact.instagram}
-            </p>
+            </a>
           </div>
           <img
             src="/rangoli.png"
-            className="w-40 h-80 object-left object-cover"
+            className="w-40 h-80 object-left object-cover rangoli"
           />
         </div>
       </div>
@@ -170,16 +176,16 @@ export default async function Home({ params }) {
         <div className="absolute -z-10 w-full opacity-25">
           <img
             src="rangoli.png"
-            className="h-[360px] object-cover w-[250px] right-0 absolute object-left"
+            className="h-[360px] object-cover w-[250px] right-0 absolute object-left rangoli"
           />
           <img
             src="rangoli.png"
-            className="h-64 object-cover w-40 absolute top-64 left-0 -z-10"
+            className="h-64 object-cover w-40 absolute top-64 left-0 -z-10 rangoli"
           />
         </div>
         <div className={robotoMono.className}>
           <p className="text-2xl font-extralight mb-9 text-center">
-            20th August 2024
+            24th March 2024
           </p>
           <EventCard
             name="Mehendi"
@@ -214,13 +220,23 @@ export default async function Home({ params }) {
         </div>
       </div>
       <div className="w-full px-11">
-        <div className="border-[1.5px] border-black shadow-md rounded-2xl w-full py-2 text-center">
+        {/* <div className="border-[1.5px] border-black shadow-md rounded-2xl w-full py-2 text-center">
           <p className={`${caveat.className} text-3xl`}>Pre-Wedding Shoot</p>
-        </div>
+        </div> */}
         <div className="my-7 border-[1.5px] border-black shadow-md rounded-2xl w-full py-2 text-center">
-          <p className={`${caveat.className} text-3xl`}>Wedding Album</p>
+          <a
+            className={`${caveat.className} text-3xl`}
+            href="https://drive.google.com/drive/folders/1ybOW_mFssqqY1UGndZ6ctExNGyQ0TMiy?usp=drive_link"
+          >
+            Wedding Album
+          </a>
         </div>
-        <div className="border-[1.5px] border-black shadow-md rounded-2xl w-full py-2 text-center">
+        <div
+          className="border-[1.5px] border-black shadow-md rounded-2xl w-full py-2 text-center cursor-pointer"
+          onClick={() => {
+            alert("This link will be available soon");
+          }}
+        >
           <p className={`${caveat.className} text-3xl`}>Wedding Video</p>
         </div>
       </div>

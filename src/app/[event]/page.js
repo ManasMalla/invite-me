@@ -49,7 +49,7 @@ export default async function Home({ params }) {
   return (
     <main className="flex min-h-screen flex-col items-center pt-12">
       <div className="z-50 top-0 absolute w-screen h-screen bg-black loader items-center flex justify-center">
-        <img src="/radhasundariyam.png" class="w-1/4" />
+        <img src="/radhasundariyam.png" class="w-1/2 lg:w-1/4" />
       </div>
       <div className="px-12 w-full flex flex-col items-center">
         <h1 className={`${caveat.className} text-[36px]`}>

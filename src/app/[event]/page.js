@@ -30,7 +30,8 @@ export default async function Home({ params }) {
       .fromTo(
         ".loader",
         { y: 0 },
-        { ease: "Power4.easeOut", y: "-100%", duration: 1 }
+        { ease: "Power4.easeOut", y: "-100%", duration: 2 },
+        "+=0.5"
       );
   });
   const res = await fetch(

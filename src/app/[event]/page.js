@@ -1,3 +1,5 @@
+"use client";
+
 import { Caveat } from "next/font/google";
 import { Roboto_Mono } from "next/font/google";
 import Family from "@/components/family";
@@ -5,6 +7,10 @@ import EventCard from "@/components/event";
 import { useSearchParams } from "next/navigation";
 import { Wedding } from "@/models/wedding";
 import Link from "next/link";
+import gsap from "gsap";
+
+import { useGSAP } from "@gsap/react";
+import { useEffect } from "react";
 
 const caveat = Caveat({ subsets: ["latin"] });
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
@@ -18,6 +24,15 @@ Number.prototype.pad = function (size) {
 };
 
 export default async function Home({ params }) {
+  useEffect(() => {
+    var tl = gsap
+      .timeline({})
+      .fromTo(
+        ".loader",
+        { y: 0 },
+        { ease: "Power4.easeOut", y: "-100%", duration: 1 }
+      );
+  });
   const res = await fetch(
     `https://invite-me-ba9d3-default-rtdb.firebaseio.com/${params.event}.json`
   );
@@ -31,9 +46,11 @@ export default async function Home({ params }) {
   const date = new Date(
     weddingInstance.invitationDetails.date.replace(pattern, "$3-$2-$1")
   );
-
   return (
     <main className="flex min-h-screen flex-col items-center pt-12">
+      <div className="z-50 top-0 absolute w-screen h-screen bg-black loader items-center flex justify-center">
+        <img src="/radhasundariyam.png" class="w-1/4" />
+      </div>
       <div className="px-12 w-full flex flex-col items-center">
         <h1 className={`${caveat.className} text-[36px]`}>
           {weddingInstance.bride.short_name} &{" "}
@@ -209,8 +226,10 @@ export default async function Home({ params }) {
       <div
         className={`bg-[#E5E5E5] mt-20 w-full py-2 text-center ${robotoMono.className}`}
       >
-        <p className="pb-3">a product of cacheho.com</p>
-        <p className="text-xs">© 2024 CacheHo | All Rights Reserved</p>
+        <p className="pb-3">a product of cacheho.com and theananta.in</p>
+        <p className="text-xs">
+          © 2024 CacheHo + theAnanta | All Rights Reserved
+        </p>
       </div>
     </main>
   );

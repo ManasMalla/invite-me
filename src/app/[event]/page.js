@@ -52,7 +52,7 @@ export default async function Home({ params }) {
         <img src="/radhasundariyam.png" class="w-1/2 lg:w-1/4" />
       </div>
       <div className="px-12 w-full flex flex-col items-center">
-        <h1 className={`${caveat.className} text-[36px]`}>
+        <h1 className={`${caveat.className} text-[36px] text-center`}>
           {weddingInstance.bride.short_name} &{" "}
           {weddingInstance.groom.short_name}
         </h1>

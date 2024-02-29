@@ -4,6 +4,7 @@ import Family from "@/components/family";
 import EventCard from "@/components/event";
 import { useSearchParams } from "next/navigation";
 import { Wedding } from "@/models/wedding";
+import Link from "next/link";
 
 const caveat = Caveat({ subsets: ["latin"] });
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
@@ -48,27 +49,29 @@ export default async function Home({ params }) {
           <h3 className={`${caveat.className} text-2xl`}>
             {weddingInstance.invitationDetails.venue.name}
           </h3>
-          <button
+          <Link
             className={`${robotoMono.className} p-2 text-xs mt-3 text-white mx-auto rounded-md bg-black`}
+            href={weddingInstance.mapAndDirections.map}
             // onClick={() => {
             //   console.log("clicked");
             // }}
           >
-            navigate me
-          </button>
+            Google Maps
+          </Link>
         </div>
         <div className="w-full absolute top-0 px-20 pt-3 pb-6 flex flex-col ">
           <h3 className={`${caveat.className} text-2xl`}>
             {weddingInstance.invitationDetails.venue.name}
           </h3>
-          <button
+          <Link
             className={`${robotoMono.className} p-2 text-xs mt-3 text-white mx-auto rounded-md bg-black`}
             // onClick={() => {
             //   window.open("/house-warming", "_self");
             // }}
+            href={weddingInstance.mapAndDirections.map}
           >
-            navigate me
-          </button>
+            Google Maps
+          </Link>
         </div>
       </div>
       <div className="w-full">

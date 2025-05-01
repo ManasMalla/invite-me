@@ -24,7 +24,7 @@ export default async function WarmingCeremony() {
   //   );
 
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex min-h-screen flex-col items-center overflow-x-hidden">
       <div className="w-full px-6">
         <img src="/warming-rangoli.png" className="w-full object-top" />
         <div className="bg-[#B67E31]/60 my-4 w-full text-white px-5 flex flex-col items-center relative">
@@ -48,8 +48,8 @@ export default async function WarmingCeremony() {
             className="absolute right-6 -bottom-48 -rotate-[60deg] -scale-x-100"
           />
           <div className={`pt-14 pb-20 ${caveat.className} text-center`}>
-            <h2 className="text-3xl">Planet 40, Skypart</h2>
-            <h3 className="text-xl">Mithilapuri colony</h3>
+            <h2 className="text-3xl">1st floor, Skypart</h2>
+            <h3 className="text-xl">#108, Planet 40, Mithilapuri colony</h3>
             <button
               className={`${robotoMono.className} py-2 px-3 text-xs mt-3 text-black border-black border-[1px] mx-auto rounded-full bg-white flex gap-x-2 items-center`}
             >
@@ -57,6 +57,14 @@ export default async function WarmingCeremony() {
               <Navigation className="w-3 h-3" />
             </button>
           </div>
+          <img
+            className="w-full aspect-[1.8] object-cover rounded-xl"
+            src="WhatsApp Image 2025-05-01 at 22.07.47.jpeg"
+          />
+          <img
+            className="w-full aspect-[1.4] object-top mt-4 object-cover rounded-xl"
+            src="WhatsApp Image 2025-05-01 at 22.07.06.jpeg"
+          />
           <Family
             responsibility=""
             role="Scientific Assistant - HWPM"
@@ -103,18 +111,24 @@ export default async function WarmingCeremony() {
       </div>
       <div className="relative w-full my-12">
         <div className="bg-[#B67E31]/60 px-20 py-5 flex flex-col text-white">
-          <h3 className={`${caveat.className} text-4xl mx-auto`}>
-            Important Links
+          <h3
+            className={`${caveat.className} text-2xl mx-auto text-center w-full`}
+          >
+            We welcome you to join us on this auspicious day
           </h3>
         </div>
       </div>
       <div className="w-full px-11">
-        <div className="border-[1.5px] border-black shadow-md rounded-2xl w-full py-2 text-center">
+        <img
+          className="w-full aspect-[1.6] object-cover object-top rounded-2xl"
+          src="WhatsApp Image 2025-04-30 at 22.00.46.jpeg"
+        />
+        {/* <div className="border-[1.5px] border-black shadow-md rounded-2xl w-full py-2 text-center">
           <p className={`${caveat.className} text-3xl`}>Photo Album</p>
         </div>
         <div className="my-7 border-[1.5px] border-black shadow-md rounded-2xl w-full py-2 text-center">
           <p className={`${caveat.className} text-3xl`}>Video</p>
-        </div>
+        </div> */}
       </div>
       <div
         className={`bg-[#E5E5E5] mt-20 w-full py-2 text-center ${robotoMono.className}`}

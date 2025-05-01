@@ -77,10 +77,10 @@ export default async function WarmingCeremony() {
           />
           <Family
             responsibility=""
-            role="Engineer - GITAM"
+            role=""
             name="Tejaswi Boddipally"
           />
-          <Family responsibility="" role="Student" name="Navadeep Boddipally" />
+          <Family responsibility="" role="" name="Navadeep Boddipally" />
           <div className="h-20"></div>
         </div>
       </div>

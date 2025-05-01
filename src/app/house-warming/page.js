@@ -37,7 +37,7 @@ export default async function WarmingCeremony() {
           <p
             className={`${robotoMono.className} font-extralight tracking-[7px]`}
           >
-            29.02.2024
+            12.05.2025
           </p>
           <img
             src="gold-leaf.png"
@@ -48,8 +48,8 @@ export default async function WarmingCeremony() {
             className="absolute right-6 -bottom-48 -rotate-[60deg] -scale-x-100"
           />
           <div className={`pt-14 pb-20 ${caveat.className} text-center`}>
-            <h2 className="text-3xl">Novus Florence Village</h2>
-            <h3 className="text-xl">#101, K Block, Phase 2</h3>
+            <h2 className="text-3xl">Planet 40, Skypart</h2>
+            <h3 className="text-xl">Mithilapuri colony</h3>
             <button
               className={`${robotoMono.className} py-2 px-3 text-xs mt-3 text-black border-black border-[1px] mx-auto rounded-full bg-white flex gap-x-2 items-center`}
             >
@@ -59,16 +59,20 @@ export default async function WarmingCeremony() {
           </div>
           <Family
             responsibility=""
-            role="Business Man"
-            name="Kamsu Bhaskara Rao"
+            role="Scientific Assistant - HWPM"
+            name="Eswara Rao Boddipally"
           />
-          <Family responsibility="" role="Home Maker" name="Kamsu Aruna" />
           <Family
             responsibility=""
-            role="Engineer - Confluent"
-            name="Kamsu Sasi Teja"
+            role="Home Maker"
+            name="Sudharani Boddipally"
           />
-          <Family responsibility="" role="Student" name="Kamsu Ravi Teeja" />
+          <Family
+            responsibility=""
+            role="Engineer - GITAM"
+            name="Tejaswi Boddipally"
+          />
+          <Family responsibility="" role="Student" name="Navadeep Boddipally" />
           <div className="h-20"></div>
         </div>
       </div>
@@ -90,10 +94,10 @@ export default async function WarmingCeremony() {
         </div>
         <div className={robotoMono.className}>
           <p className="text-2xl font-extralight mb-9 text-center">
-            29th February 2024
+            12th May 2025
           </p>
-          <EventCard name="Gruhapravesham" time="2:30 PM" />
-          <EventCard name="Satyanarayana Vratam" time={"2:30 PM"} />
+          <EventCard name="Gruhapravesham" time="2:04 AM" />
+          <EventCard name="Satyanarayana Vratam" time={"till 7:00 AM"} />
           <EventCard name="Lunch" time={"12:00 PM"} />
         </div>
       </div>

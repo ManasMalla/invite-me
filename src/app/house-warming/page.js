@@ -54,7 +54,7 @@ export default async function WarmingCeremony() {
             </h3>
             <a
               href="https://maps.app.goo.gl/JtrDEyVyC2h2x9pSA?g_st=aw"
-              className={`${robotoMono.className} py-2 px-3 text-xs mt-3 text-black border-black border-[1px] mx-auto rounded-full bg-white flex gap-x-2 items-center`}
+              className={`${robotoMono.className} py-2 px-3 text-xs mt-3 text-black border-black border-[1px] mx-auto rounded-full bg-white flex gap-x-2 items-center text-center`}
             >
               navigate me
               <Navigation className="w-3 h-3" />

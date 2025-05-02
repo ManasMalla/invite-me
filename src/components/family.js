@@ -7,11 +7,13 @@ const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 export default function Family(props) {
   return (
     <div className={`${robotoMono.className} font-light text-center my-7`}>
-      <p className="text-xs mb-1">{props.responsibility}</p>
+      {props.responsibility != "" && (
+        <p className="text-xs mb-1">{props.responsibility}</p>
+      )}
       <p className={`${caveat.className} text-[42px] leading-[1]`}>
         {props.name}
       </p>
-      <p className="font-extralight">{props.role}</p>
+      {props.role != "" && <p className="font-extralight">{props.role}</p>}
     </div>
   );
 }

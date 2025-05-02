@@ -73,13 +73,9 @@ export default async function WarmingCeremony() {
             role="Scientific Assistant - HWPM"
             name="Eswara Rao Boddepally"
           />
-          <Family
-            responsibility=""
-            role="Home Maker"
-            name="Sudharani Boddepally"
-          />
-          <Family responsibility="" role="" name="Tejaswi Boddepally" />
-          <Family responsibility="" role="" name="Navadeep Boddepally" />
+          <Family responsibility="" role="Home Maker" name="Sudharani" />
+          <Family responsibility="" role="" name="Tejaswi" />
+          <Family responsibility="" role="" name="Navadeep" />
           <div className="h-20"></div>
         </div>
       </div>

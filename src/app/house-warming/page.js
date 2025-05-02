@@ -48,7 +48,7 @@ export default async function WarmingCeremony() {
             className="absolute right-6 -bottom-48 -rotate-[60deg] -scale-x-100"
           />
           <div className={`pt-14 pb-20 ${caveat.className} text-center`}>
-            <h2 className="text-3xl">#108, Skypart</h2>
+            <h2 className="text-3xl">#108, Sky Infra</h2>
             <h3 className="text-xl">
               Planet 40, Opp Westside, Mithilapuri colony
             </h3>

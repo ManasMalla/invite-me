@@ -48,18 +48,21 @@ export default async function WarmingCeremony() {
             className="absolute right-6 -bottom-48 -rotate-[60deg] -scale-x-100"
           />
           <div className={`pt-14 pb-20 ${caveat.className} text-center`}>
-            <h2 className="text-3xl">1st floor, Skypart</h2>
-            <h3 className="text-xl">#108, Planet 40, Mithilapuri colony</h3>
-            <button
+            <h2 className="text-3xl">#108, Skypart</h2>
+            <h3 className="text-xl">
+              Planet 40, Opp Westside, Mithilapuri colony
+            </h3>
+            <a
+              href="https://maps.app.goo.gl/JtrDEyVyC2h2x9pSA?g_st=aw"
               className={`${robotoMono.className} py-2 px-3 text-xs mt-3 text-black border-black border-[1px] mx-auto rounded-full bg-white flex gap-x-2 items-center`}
             >
               navigate me
               <Navigation className="w-3 h-3" />
-            </button>
+            </a>
           </div>
           <img
             className="w-full aspect-[1.8] object-cover rounded-xl"
-            src="WhatsApp Image 2025-05-01 at 22.07.47.jpeg"
+            src="WhatsApp Image 2025-05-02 at 11.09.02.jpeg"
           />
           <img
             className="w-full aspect-[1.4] object-top mt-4 object-cover rounded-xl"
@@ -75,11 +78,7 @@ export default async function WarmingCeremony() {
             role="Home Maker"
             name="Sudharani Boddepally"
           />
-          <Family
-            responsibility=""
-            role=""
-            name="Tejaswi Boddepally"
-          />
+          <Family responsibility="" role="" name="Tejaswi Boddepally" />
           <Family responsibility="" role="" name="Navadeep Boddepally" />
           <div className="h-20"></div>
         </div>
@@ -121,7 +120,7 @@ export default async function WarmingCeremony() {
       <div className="w-full px-11">
         <img
           className="w-full aspect-[1.6] object-cover object-top rounded-2xl"
-          src="WhatsApp Image 2025-04-30 at 22.00.46.jpeg"
+          src="WhatsApp Image 2025-05-02 at 11.12.41.jpeg"
         />
         {/* <div className="border-[1.5px] border-black shadow-md rounded-2xl w-full py-2 text-center">
           <p className={`${caveat.className} text-3xl`}>Photo Album</p>

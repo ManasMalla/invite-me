@@ -68,19 +68,19 @@ export default async function WarmingCeremony() {
           <Family
             responsibility=""
             role="Scientific Assistant - HWPM"
-            name="Eswara Rao Boddipally"
+            name="Eswara Rao Boddepally"
           />
           <Family
             responsibility=""
             role="Home Maker"
-            name="Sudharani Boddipally"
+            name="Sudharani Boddepally"
           />
           <Family
             responsibility=""
             role=""
-            name="Tejaswi Boddipally"
+            name="Tejaswi Boddepally"
           />
-          <Family responsibility="" role="" name="Navadeep Boddipally" />
+          <Family responsibility="" role="" name="Navadeep Boddepally" />
           <div className="h-20"></div>
         </div>
       </div>
@@ -105,7 +105,7 @@ export default async function WarmingCeremony() {
             12th May 2025
           </p>
           <EventCard name="Gruhapravesham" time="2:04 AM" />
-          <EventCard name="Satyanarayana Vratam" time={"till 7:00 AM"} />
+          <EventCard name="Satyanarayana Swamy Vratam" time={"till 7:00 AM"} />
           <EventCard name="Lunch" time={"12:00 PM"} />
         </div>
       </div>
